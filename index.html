@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmanuel Olarewaju - Profile Card</title>
+    <meta name="description"
+        content="Modern profile card showcasing Emmanuel Olarewaju, a frontend developer passionate about accessibility and clean design." />
+    <meta name="author" content="Emmanuel Olarewaju" />
+
+    <meta property="og:title" content="Emmanuel Olarewaju - Profile Card" />
+    <meta property="og:description" content="Frontend developer with a passion for accessibility and clean design." />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+
+<body>
+    <nav class="top-nav">
+        <a href="/" class="active">Profile</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+
+    <article data-testid="test-profile-card">
+        <figure>
+            <img data-testid="test-user-avatar" src="images/atom.jpeg" alt="Avatar of Emmanuel Olarewaju" />
+        </figure>
+
+        <header>
+            <h2 data-testid="test-user-name">Emmanuel Olarewaju</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+            Frontend developer with a passion for accessibility and clean design.
+        </p>
+
+        <p>
+            Current Time:
+            <span data-testid="test-user-time" id="currentTime">Loading...</span>
+        </p>
+
+        <nav>
+            <ul data-testid="test-user-social-links">
+                <li>
+                    <a href="https://twitter.com/__Aatom" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-twitter">Twitter</a>
+                </li>
+                <li>
+                    <a href="https://github.com/EmmaAtom00" target="_blank" rel="noopener noreferrer"
+                        data-testid="test-user-social-github">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section>
+            <h3>Hobbies</h3>
+            <ul data-testid="test-user-hobbies">
+                <li>Coding</li>
+                <li>Reading</li>
+                <li>Anime</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Dislikes</h3>
+            <ul data-testid="test-user-dislikes">
+                <li>Yapping</li>
+                <li>Headache</li>
+                <li>Trouble</li>
+            </ul>
+        </section>
+    </article>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
